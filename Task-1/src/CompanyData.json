@@ -1,0 +1,240 @@
+[
+    {
+      "name": "Audit session.",
+      "description": "A multinational technology company that designs, develops, and sells consumer electronics, computer software, and online services.",
+      "children": [
+        {
+          "name": "audit1",
+          "value": "123",
+          "children": [
+            {
+              "name": "14 pro",
+              "price" : "price: -250000",
+              "description" : "seamless performance"
+            },
+            {
+              "name": "15 Pro Max",
+              "price" : "price: -300000",
+              "description" : "seamless performance and camrea perforamce is improved"
+            }
+          ]
+        },
+        {
+          "name": "Mac",
+          "description": "A family of personal computers designed, developed, and marketed by Apple Inc. with macOS as its primary operating system.",
+          "children":[
+            {
+              "name": "mac air 1",
+              "price": "price- 260000",
+              "description": "best for high performance"
+            },
+            {
+              "name" : "mac air 2",
+              "price": "price- 300000",
+              "description" : "all in one best"
+
+            }
+          ]
+        },
+        {
+          "name": "App Store",
+          "description": "A digital distribution platform for mobile applications developed and operated by Apple Inc. The store allows users to browse and download applications from the iOS, iPadOS, macOS, watchOS, tvOS, and audioOS operating systems."
+        },
+        {
+          "name": "mac Tablet",
+          "price" : "price :- 145000",
+          "description": "bets for commercial work"
+        }
+      ]
+    },
+    {
+      "name": "Samsung.",
+      "description": "A multinational technology company that designs, develops, and sells consumer electronics, computer software, and online services.",
+      "children": [
+        {
+          "name": "Galaxy S24",
+          "price" : "price :-150000",
+          "description": "A line of smartphones designed, developed, and marketed by Apple Inc. known for its high-resolution Retina displays, A-series Bionic chips, and iOS operating system."
+        },
+        {
+          "name": "Tv",
+          "price" : "price :-60000",
+          "description": "A family of personal computers designed, developed, and marketed by Apple Inc. with macOS as its primary operating system."
+        },
+        {
+          "name": "Watch",
+          "price" : "price :-15000",
+          "description": "A digital distribution platform for mobile applications developed and operated by Apple Inc. The store allows users to browse and download applications from the iOS, iPadOS, macOS, watchOS, tvOS, and audioOS operating systems."
+        },
+        {
+          "name": "Ac",
+          "price" : "price :-45000",
+          "description": "cooling purpose"
+        }
+      ]
+    },
+    {
+      "name": "Google LLC",
+      "description": "An American multinational technology company specializing in Internet-related services and products.",
+      "children": [
+        {
+          "name": "Google Search",
+          "price": "price: - Free",
+          "description": "A web search engine developed by Google. It is the most-used search engine on the World Wide Web.",
+          "children": [
+            {
+              "name": "Image Search",
+              "price": "price: - Free",
+              "description": "Search for images on the web."
+            },
+            {
+              "name": "News Search",
+              "price": "price: - Free",
+              "description": "Search for news articles on the web."
+            }
+          ]
+        },
+        {
+          "name": "Android",
+          "price": "price: - Free (with in-app purchases)",
+          "description": "A mobile operating system based on a modified version of the Linux kernel and other open source software.",
+          "children": [
+            {
+              "name": "Android 12",
+              "price": "price: - Free",
+              "description": "The twelfth major release and the 19th version of Android."
+            },
+            {
+              "name": "Android 13",
+              "price": "price: - Free",
+              "description": "The thirteenth major release of the Android mobile operating system."
+            }
+          ]
+        },
+        {
+          "name": "YouTube",
+          "price": "price: - Free (with ads)",
+          "description": "An online video-sharing platform headquartered in San Bruno, California."
+        },
+        {
+          "name": "Google Cloud",
+          "price": "price: - Varies",
+          "description": "A suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products."
+        }
+      ]
+    },
+    {
+      "name": "Microsoft Corporation",
+      "description": "An American multinational technology company with headquarters in Redmond, Washington.",
+      "children": [
+        {
+          "name": "Windows",
+          "price": "price: - Varies",
+          "description": "A group of several proprietary graphical operating system families developed and marketed by Microsoft.",
+          "children": [
+            {
+              "name": "Windows 10",
+              "price": "price: - $139",
+              "description": "The latest version of Microsoft's operating system for personal computers."
+            },
+            {
+              "name": "Windows 11",
+              "price": "price: - $139",
+              "description": "The next major version of Microsoft's operating system for personal computers."
+            }
+          ]
+        },
+        {
+          "name": "Office 365",
+          "price": "price: - $99/year",
+          "description": "A line of subscription services offered by Microsoft as part of the Microsoft Office product line.",
+          "children": [
+            {
+              "name": "Word",
+              "price": "price: - Included in Office 365",
+              "description": "A word processing software developed by Microsoft."
+            },
+            {
+              "name": "Excel",
+              "price": "price: - Included in Office 365",
+              "description": "A spreadsheet developed by Microsoft."
+            }
+          ]
+        },
+        {
+          "name": "Azure",
+          "price": "price: - Varies",
+          "description": "A cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services."
+        },
+        {
+          "name": "Xbox",
+          "price": "price: - Varies",
+          "description": "A video gaming brand created and owned by Microsoft.",
+          "children": [
+            {
+              "name": "Xbox Series X",
+              "price": "price: - $499",
+              "description": "The latest gaming console from Microsoft."
+            },
+            {
+              "name": "Xbox Series S",
+              "price": "price: - $299",
+              "description": "A lower-cost alternative to the Xbox Series X."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "description": "An American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "children": [
+        {
+          "name": "Amazon Prime",
+          "price": "price: - $119/year",
+          "description": "A paid subscription service that offers its users access to services that would otherwise be unavailable or cost extra to the typical Amazon customer.",
+          "children": [
+            {
+              "name": "Prime Video",
+              "price": "price: - Included in Amazon Prime",
+              "description": "An Internet video on demand service that is developed, owned, and operated by Amazon."
+            },
+            {
+              "name": "Prime Music",
+              "price": "price: - Included in Amazon Prime",
+              "description": "A music streaming service similar to Spotify and Apple Music."
+            }
+          ]
+        },
+        {
+          "name": "Amazon Web Services",
+          "price": "price: - Varies",
+          "description": "A subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments."
+        },
+        {
+          "name": "Kindle",
+          "price": "price: - Varies",
+          "description": "A series of e-readers designed and marketed by Amazon.",
+          "children": [
+            {
+              "name": "Kindle Paperwhite",
+              "price": "price: - $129",
+              "description": "A mid-range e-reader with a high-resolution display and built-in light."
+            },
+            {
+              "name": "Kindle Oasis",
+              "price": "price: - $249",
+              "description": "A high-end e-reader with a larger screen and more features."
+            }
+          ]
+        },
+        {
+          "name": "Alexa",
+          "price": "price: - Varies",
+          "description": "A virtual assistant AI developed by Amazon, first used in the Amazon Echo smart speakers."
+        }
+      ]
+    }
+   
+  ]
+  

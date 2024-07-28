@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"HARSH-12080-stderr-1721283940757.txt","computername":"HARSH","pid":12080,"type":"stderr","created":1721283940757},{"file":"HARSH-13440-stderr-1721284236735.txt","computername":"HARSH","pid":13440,"type":"stderr","created":1721284236735},{"file":"HARSH-19416-stderr-1721284170831.txt","computername":"HARSH","pid":19416,"type":"stderr","created":1721284170831},{"file":"HARSH-24240-stderr-1721284238453.txt","computername":"HARSH","pid":24240,"type":"stderr","created":1721284238453},{"file":"HARSH-24804-stderr-1721304248333.txt","computername":"HARSH","pid":24804,"type":"stderr","created":1721304248333},{"file":"HARSH-24804-stdout-1721304248319.txt","computername":"HARSH","pid":24804,"type":"stdout","created":1721304248319},{"file":"HARSH-25080-stderr-1721284233669.txt","computername":"HARSH","pid":25080,"type":"stderr","created":1721284233669},{"file":"HARSH-26168-stderr-1721284170015.txt","computername":"HARSH","pid":26168,"type":"stderr","created":1721284170015},{"file":"HARSH-2660-stderr-1721283944163.txt","computername":"HARSH","pid":2660,"type":"stderr","created":1721283944163},{"file":"HARSH-27216-stderr-1721284235702.txt","computername":"HARSH","pid":27216,"type":"stderr","created":1721284235702},{"file":"HARSH-27536-stderr-1721284190705.txt","computername":"HARSH","pid":27536,"type":"stderr","created":1721284190705},{"file":"HARSH-28596-stderr-1721284234502.txt","computername":"HARSH","pid":28596,"type":"stderr","created":1721284234502},{"file":"HARSH-30572-stderr-1721284237648.txt","computername":"HARSH","pid":30572,"type":"stderr","created":1721284237648},{"file":"HARSH-30788-stderr-1721284167308.txt","computername":"HARSH","pid":30788,"type":"stderr","created":1721284167308},{"file":"HARSH-34332-stderr-1721283951001.txt","computername":"HARSH","pid":34332,"type":"stderr","created":1721283951001},{"file":"HARSH-38012-stderr-1721283943171.txt","computername":"HARSH","pid":38012,"type":"stderr","created":1721283943171},{"file":"HARSH-39600-stderr-1721283951436.txt","computername":"HARSH","pid":39600,"type":"stderr","created":1721283951436},{"file":"HARSH-40224-stderr-1721284189634.txt","computername":"HARSH","pid":40224,"type":"stderr","created":1721284189634},{"file":"HARSH-40368-stderr-1721283405103.txt","computername":"HARSH","pid":40368,"type":"stderr","created":1721283405103},{"file":"HARSH-40916-stderr-1721284292534.txt","computername":"HARSH","pid":40916,"type":"stderr","created":1721284292534},{"file":"HARSH-40916-stdout-1721284292530.txt","computername":"HARSH","pid":40916,"type":"stdout","created":1721284292530},{"file":"HARSH-5416-stderr-1721284166006.txt","computername":"HARSH","pid":5416,"type":"stderr","created":1721284166006}];
+        var lastUpdated = 1721304249477;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>
